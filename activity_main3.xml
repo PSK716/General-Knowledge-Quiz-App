@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playagain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Results_section.Main3Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Score !"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:translationX="0dp"
+        android:translationY="100dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Score"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:translationX="0dp"
+        android:translationY="200dp"
+        android:translationZ="50dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="163dp"
+        android:layout_height="62dp"
+        android:background="@drawable/button_circular"
+        android:onClick="playAgain"
+        android:text="Play  Again"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationX="120dp"
+        android:translationY="300dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="357dp"
+        android:layout_height="406dp"
+        android:translationX="30dp"
+        android:translationY="400dp"
+        android:translationZ="50dp"
+        app:srcCompat="@drawable/smiley" />
+
+</RelativeLayout>

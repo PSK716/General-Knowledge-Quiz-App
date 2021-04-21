@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_marginTop="?android:attr/actionBarSize">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:background="@drawable/images1"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal|center"
+            android:background="@color/bg_main"
+            android:backgroundTint="@color/cardview_shadow_end_color">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card1"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon1">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_user_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/Welcome"
+            android:textAllCaps="true"
+            android:textColor="@color/strokeColor" />
+        android:textSize="15sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        app:layout_anchorGravity="bottom"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Recent Activities"
+            android:textColor="@android:color/holo_red_light"
+            android:fontFamily="@font/lato_black"
+            android:textSize="20sp">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:id="@+id/recent_activity_list"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:background="@drawable/logoo"
+        android:orientation="vertical"
+        android:translationX="0dp"
+        android:translationY="270dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/take_btn"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:background="#ffde00"
+        android:fontFamily="@font/lato_black"
+        android:onClick="take_btn"
+        android:text="Take a Quiz"
+        android:textColor="#000000"
+        android:translationX="115dp"
+        android:translationY="450dp"
+        tools:text="Take a Quiz" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
